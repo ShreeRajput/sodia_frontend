@@ -1,0 +1,108 @@
+.editProfileOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .editProfileContainer {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .editProfileContainer h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .formGroup label {
+    width: 30%;
+    color: #555;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    margin-right: 10px;
+  }
+  
+  .formGroup input, .formGroup textarea {
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .birthdayClass {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s;
+}
+  
+  .formGroup textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .cancelButton, .saveButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .cancelButton {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .cancelButton:hover {
+    background-color: #5a6268;
+  }
+  
+  .saveButton {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .saveButton:hover {
+    background-color: #0056b3;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

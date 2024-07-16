@@ -1,0 +1,92 @@
+.chatMenuInput {
+    width: 90%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.conversation {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 8px;
+    border-radius: 30px;
+    max-width: 250px;
+}
+  
+.conversation:hover {
+    background-color: rgb(245, 243, 243);
+}
+  
+.conversationImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+  
+.conversationName {
+    font-weight: 500;
+}
+
+.searchContainer {
+    position: relative;
+    width: 100%; /* Adjust this as needed */
+}
+
+.chatMenuInput {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.searchResult {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure it appears above other elements */
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.searchResult ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.searchResultItems {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    background-color: #c6f4dc;
+    cursor: pointer;
+    max-width: 230px;
+    border-radius: 15px;
+}
+
+.searchResultItems:hover {
+    background-color: #aedbc4;
+}
+
+.searchResultItems:last-child {
+    border-bottom: none;
+}
+  
+.searchResultImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}  
+
+.selected {
+    background-color: rgb(207, 224, 228);
+}

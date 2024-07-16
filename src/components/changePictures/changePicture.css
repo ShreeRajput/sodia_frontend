@@ -1,0 +1,146 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.modal-button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.shareImgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview-img {
+  max-width: 100%;
+  max-height: 300px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+}
+
+.button {
+  width: 48%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.modal-button.cancel {
+  background-color: #555555;
+  color: white;
+}
+
+.modal-button.cancel:hover {
+  background-color: #444444;
+  transform: translateY(-2px);
+}
+
+.button.cancel {
+  background-color: #555555;
+  color: white;
+}
+
+.button.cancel:hover {
+  background-color: #444444;
+  transform: translateY(-2px);
+}
+
+.button.ok {
+  background-color: #4caf50;
+  color: white;
+}
+
+.button.ok:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.modal-button.upload {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 0;
+}
+
+.modal-button.upload:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.modal-button.remove {
+  background-color: #f44336;
+  color: white;
+}
+
+.modal-button.remove:hover {
+  background-color: #e53935;
+  transform: translateY(-2px);
+}
+
+.modal-button.remove:disabled {
+  cursor: not-allowed;
+}
+
+.button.ok:disabled {
+  cursor: not-allowed;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid white;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,150 @@
+.topbarContainer {
+    height: 50px;
+    width: 100%;
+    background-color: #800080;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.topbarLeft {
+    flex: 3;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.topbarCenter {
+    flex: 4;
+    position: relative;
+}
+
+.searchbar {
+    width: 100%;
+    max-width: 400px;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.searchIcon {
+    font-size: 20px !important;
+}
+
+.searchInput {
+    border: none;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.searchResults {
+    position: absolute;
+    top: 40px;
+    width: calc(100% - 20px);
+    max-width: 400px;
+    background-color: #f1f1f1;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.searchResults ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.searchResultItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.searchResultItem:hover {
+    background-color: #e0e0e0;
+}
+
+.searchResultItem:last-child {
+    border-bottom: none;
+}
+
+.searchResultImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.topbarRight {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    overflow: hidden; /* Ensures the content stays within bounds */
+}
+
+.topbarLink {
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.topbarIcons {
+    display: flex;
+    align-items: center;
+}
+
+.topbarIconItem {
+    margin-right: 15px;
+    padding-top: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.topbarIconBadge {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.topbarImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}

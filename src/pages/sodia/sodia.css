@@ -1,0 +1,36 @@
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    position: relative; /* Positioning context for the text */
+}
+
+.logoImg {
+    height: 100px;
+    width: 100px;   
+    background-color: rgb(238, 238, 238);
+    border-radius: 20%;
+}
+
+.loadingTextContainer {
+    position: absolute;
+    bottom: 20px; /* Position text a bit above the very bottom */
+    width: 100%;
+    text-align: center;
+}
+
+small {
+    display: block;
+    font-weight: 300;
+}
+
+strong {
+    color: #800080;
+    font-weight: bolder;
+}
+
+.loadingTextContainer small, .loadingTextContainer strong {
+    margin: 0;
+}

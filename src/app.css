@@ -1,0 +1,10 @@
+.mobile-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 20px;
+    background-color: #f8f9fa;
+}

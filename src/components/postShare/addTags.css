@@ -1,0 +1,124 @@
+.editProfileOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.editProfileContainer {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    animation: fadeIn 0.3s ease;
+}
+
+.editProfileContainer h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.formGroup label {
+    width: 30%;
+    color: #555;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    margin-right: 10px;
+}
+
+.formGroup textarea {
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    font-family: 'Arial', sans-serif;
+    resize: none;
+    height: 80px;
+}
+
+.buttonGroups {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.cancelButtons, .addButtons {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    margin-left: 10px; /* Added margin between buttons */
+}
+
+.cancelButtons {
+    background-color: #dc3545; /* Red color */
+    color: white;
+}
+
+.cancelButtons:hover {
+    background-color: #c82333;
+}
+
+.addButtons {
+    background-color: #ffd700; /* Yellow color */
+    color: black;
+}
+
+.addButtons:hover {
+    background-color: #e6c200; /* Darker shade of yellow */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.formGroup input {
+    width: 70%;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    font-family: 'Arial', sans-serif;
+}
+
+.suggestionsList {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.suggestionsList li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestionsList li:hover {
+    background-color: #f0f0f0;
+}

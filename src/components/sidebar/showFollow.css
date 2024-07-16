@@ -1,0 +1,93 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  max-height: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 270px;
+  overflow-y: auto;
+}
+
+.modal-content li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #edf0f3;
+  font-size: 18px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.modal-content li:hover {
+  background-color: #dfdcdc;
+}
+
+.follower-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 40px;
+  object-fit: cover;
+}
+
+.follower-name {
+  font-size: 18px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #999;
+}
+
+.close-icon:hover {
+  color: #333;
+}
+
+.list-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

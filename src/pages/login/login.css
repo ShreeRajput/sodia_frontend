@@ -1,0 +1,118 @@
+.logins {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.loginWrappers {
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+  
+.loginLefts,
+.loginRights {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.loginLogos {
+    font-size: 50px;
+    font-weight: 800;
+    color: #800080;
+    margin-bottom: 10px;
+}
+  
+.loginDescs {
+    font-size: 24px;
+}
+  
+.loginBoxs {
+      height: 300px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+  
+.loginInputs {
+      height: 50px;
+      border-radius: 10px;
+      border: 1px solid gray;
+      font-size: 18px;
+      padding-left: 20px;
+}
+  
+.loginInputs:focus{
+      outline: none;
+}
+  
+.loginButtons {
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      background-color: #800080;
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+  
+.passForgots {
+      color: #1775ee;
+      cursor: pointer;
+}
+  
+.registerButtons {
+      align-self: center;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      background-color: rgb(164, 164, 19);
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+}
+
+.passwordContainers {
+      position: relative;
+      border: 1px solid gray;
+      border-radius: 10px;
+}
+    
+.passwordInputs {
+      padding-right: 40px;
+      height: 50px;
+      font-size: 18px;
+      padding-left: 20px;
+      border: 0px solid black;
+}
+    
+.passwordToggles {
+      position: absolute;
+      top: 50%;
+      right: 10px; /* Adjust according to your desired position */
+      transform: translateY(-50%);
+      cursor: pointer;
+}
+
+.spinninggs {
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top: 2px solid white;
+      text-align: center;
+      width: 20px;
+      height: 20px;
+      animation: spin 1s linear infinite;
+}

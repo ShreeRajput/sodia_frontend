@@ -1,0 +1,157 @@
+.settingsPopup {
+  position: absolute;
+  background-color: #ffffff; /* Background color */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateY(-50%);
+  padding: 5px 0; /* Added padding for visual appeal */
+}
+
+.settingsArrow {
+  position: absolute;
+  top: 50%; /* Center the arrow vertically */
+  left: -10px; /* Adjust this value to align the arrow with the settings icon */
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #ffffff; /* Arrow color matching the popup background */
+}
+
+.settingsContent {
+  padding: 0 10px;
+}
+
+.settingsItem {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #333; /* Text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.settingsItem:last-child {
+  border-bottom: none;
+}
+
+.settingsItem:hover {
+  background-color: #f0f0f0; /* Hover background color */
+  color: #0073e6; /* Hover text color */
+}
+
+.modalOverlays {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Background blur effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000; /* Higher than the settings popup */
+}
+
+.modals {
+  background: #cdd09d;
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners */
+  width: 400px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modals h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.errorMessage {
+  color: rgb(78, 50, 201);
+  text-align: left;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modals button {
+  padding: 10px 20px;
+  background: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modals button:hover {
+  background: #85898d;
+}
+
+.modals button.delBtn {
+  background-color: rgb(198, 4, 4);
+}
+
+.modals button.delBtn:hover {
+  background-color: rgb(244, 21, 21);
+}
+
+.delBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.delBtn .spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.modals button.confirmBtn {
+  background:rgb(2, 92, 2);
+}
+
+.modals button.confirmBtn:hover {
+  background:rgb(32, 145, 32);
+}
+
